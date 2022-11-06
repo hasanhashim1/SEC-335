@@ -51,10 +51,6 @@ In the spirit of living off the land, we will spend some time using target nativ
 
 ## Deliverable 2. Try this out on Pippen by leveraging an uploaded webshell or reverse shell on pippen to run a similar command to connect back to a listener. You may need to upload a small shell script to make this happen, particularly if you are using the simple-backdoor.php script. Provide a screenshot similar to the one below that shows you invoking the reverse shell on the target via curl or your web browser and catching the connection on your kali box.
 
-
-
-
-
 ![image-20221106002838435](./images/13.png)
 
 
@@ -67,7 +63,11 @@ In the spirit of living off the land, we will spend some time using target nativ
 
 
 
+# Windows Powershell Reverse Shell
 
+References: https://book.hacktricks.xyz/shells/shells/windows
+
+The following powershell code is run via cmd.exe. Change ATTACKERIP and ATTACKERPORT to the eth0 IP on kali and port you assigned to a nc listener.
 
 
 
