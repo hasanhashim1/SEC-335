@@ -38,13 +38,21 @@ Next I used the following command to login:
 
 ![3](./images/3.png)
 
+## Deliverable 3. Provide a screenshot similar to the one below that displays the encoded tcp stream from a weevely dump of /etc/passwd. Make sure to use a capture filter of port 80, to limit traffic.
+
+![image-20221105230845175](./images/4.png)
+
+
+
+![image-20221105230946980](./images/5.png)
 
 
 
 
 
+## reflections:
 
-
+It was great lab I learned a lot. I did not know it is that easy to generate a backdoor, I thought we have to write the code for the php backdoor.
 
 
 
