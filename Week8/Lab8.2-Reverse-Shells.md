@@ -79,6 +79,8 @@ Search for "Virus & threat protection" ----> go to "manage settings" -----> and 
 
 ![image-20221106013433200](./images/23.png)
 
+## Deliverable 3. Access your windows system on SEC335-WAN via remmina (so that you can copy paste). Provide a screenshot similar to the one below that shows the unsuccessful execution of powershell via cmd.exe followed by the successful reverse shell after you figure out how to turn off Windows Defender.
+
 First I took the PowerShell script and then I changed the ip and the port.
 
 ![image-20221106014303118](./images/17.png)
@@ -90,6 +92,8 @@ And then I checked my kali box and I had connection:
 
 
 
+
+## Deliverable 4. Hit the internet, see if you can create a python2,3 or php reverse shell on any of the linux targets. Provide a screenshot similar to the one below as well as the full text of the command used and the results of the id command invoked on the rocky through the reverse shell. 
 
 Python:
 
