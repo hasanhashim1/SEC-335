@@ -32,7 +32,7 @@ cd sqli-labs-php7
 
 edit sql-connections/db-creds.inc
 
-![img](C:\Users\Hasan\Desktop\Champlain-classes\SEC-335\week9\images\1.png)
+![img](./1.png)
 
 start the application
 
@@ -42,9 +42,9 @@ access the application and click on the Setup/reset Database for labs link.
 
 
 
-![img](C:\Users\Hasan\Desktop\Champlain-classes\SEC-335\week9\images\3.png)
+![img](./3.png)
 
-![img](C:\Users\Hasan\Desktop\Champlain-classes\SEC-335\week9\images\2.png)
+![img](./2.png)
 
 
 
