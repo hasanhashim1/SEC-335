@@ -3,7 +3,7 @@
 | 💡The following 'C' program prints out the "effective user name" of the running process as opposed to the user who invoked that process. So if bob runs this program, bob would be printed out. If it is run as sudo, root would be printed out. If the suid bit is set, the owner of the file will be the effective user. So if root owns the file and bob runs it, the effective user will be root. |
 | :----------------------------------------------------------: |
 
-```
+```c
 #include <stdlib.h>
 #include <pwd.h>
 #include <stdio.h>
