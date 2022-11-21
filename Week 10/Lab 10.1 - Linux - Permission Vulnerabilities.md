@@ -60,29 +60,40 @@ Repeat the following use of ls -l and stat on the passwd program
 
 ## Deliverable 4. Hit the internet and find a means to search for suid programs across your kali system. Do so as a normal user as this is a privilege escalation technique you might use. Make sure to document this. You will need to deal with permissions errors by piping those to /dev/null. Provide a screenshot showing your command and listing similar to that below. Your own sudo program should be in the list.
 
-https://www.hackingarticles.in/linux-privilege-escalation-using-suid-binaries/
-https://steflan-security.com/linux-privilege-escalation-suid-binaries/
+* https://www.hackingarticles.in/linux-privilege-escalation-using-suid-binaries/
+* https://steflan-security.com/linux-privilege-escalation-suid-binaries/
+* https://dev.to/iggredible/what-does-2-1-mean-290
 
 
+![4.png](imges/4.png)
 
-![img](./imges/5.png)
 
 ## Deliverable 5. A suid program has been hidden on rocky (10.0.17.200). Please hunt it down. Provide a screenshot that shows the command and file found. It will be obvious and the name will start with a 'b'.
 
 rwx errors
+![5.png](imges/5.png)
+
+`find / -perm -u=s -type f 2>/dev/null | grep /usr/bin/b`
 
 
 
 ## Deliverable 6. Consider the following screenshot. This user created a file under /etc/ that is world writable. Were this file to be of any security relevance, this could be a problem. Create such a file, and figure out how to find it. Show your command.
 
+```
+sudo nano /etc/happy_thanksgiving.txt 
+sudo chmod o+w /etc/happy_thanksgiving.txt  
+find /etc -perm -o=o -type f 2>/dev/null | grep hap
+```
 
+![6.png](imges/6.png)
 
-![img](./imges/6.png)
 
 
 
 ## Deliverable 7. A world writable file has been hidden on rocky. Please hunt it down. Provide a screenshot that shows the command and file found. It will start with an 's'. (note, the sys and proc directories will give you a lot of false positives)
+```
+ind / -not -path "/proc/*" -not -path "/sys/*" -type f -perm -o=w 2>/dev/null
+cat /usr/share/games/solitaire
+```
 
-
-
-## Deliverable 8. Document your suid and world writable hunting techniques in your tech journal. You may have a need for them later. Provide a link to this technical article. No reflection is required.
+![7.png](imges/7.png)
