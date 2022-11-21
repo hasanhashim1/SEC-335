@@ -97,3 +97,6 @@ cat /usr/share/games/solitaire
 ```
 
 ![7.png](imges/7.png)
+
+* https://linuxconfig.org/how-to-explicitly-exclude-directory-from-find-command-s-search
+* https://www.crybit.com/exclude-directories/#:~:text=.%2Fcry%2Ffindme-,Method%201%20%3A%20Using%20the%20option%20%E2%80%9C%2Dprune%20%2Do%E2%80%9D,print%E2%80%9D%20switches%20with%20find%20command.&text=The%20directory%20%E2%80%9Cbit%E2%80%9D%20will%20be%20excluded%20from%20the%20find%20search!
