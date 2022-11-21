@@ -40,22 +40,30 @@ int main(int argc, char *argv[])
 
 ## Deliverable 1. Using the code above, create a file called effective_user.c and compile and execute the file as a normal user and using sudo. Provide a screenshot similar to the one below.
 
-![img](./imges/1.png)
+![1.png](imges/1.png)
 
-## Deliverable 2. What are the octal (numeric) permissions of the effective_user program? Using ls -l you should be able to calculate these permissions, you can also use the "stat" program as a shortcut. Remember r=4,w=2, x=1, and "-" is a 0![img](./imges/2.png)
+
+## Deliverable 2. What are the octal (numeric) permissions of the effective_user program? Using ls -l you should be able to calculate these permissions, you can also use the "stat" program as a shortcut. Remember r=4,w=2, x=1, and "-" is a 0!
 
 Repeat the following use of ls -l and stat on the passwd program
 
-![img](./imges/3.png)
+![2.png](imges/2.png)
+
 
 | 💡The octal code is not intuitive. The /usr/bin/passwd program has the suid bit set which means that the program runs with the owner's permissions (root). This makes sense because when a normal user changes their password the /etc/passwd and /etc/shadow files must be changed. Note the leading 4 in the octal code. This indicates a suid executable (the 'x' is implied). |
 | :----------------------------------------------------------: |
 
 ## Deliverable 3. Figure out how to change the ownership of your c program executable such that the file is owned by user: root and group: root. Once you've done that, add the suid bit to the program (this is shown in the screenshot) and execute the program as a normal user. Provide a screenshot similar to the one below:
 
-![img](./imges/4.png)
+![3.png](imges/3.png)
+
 
 ## Deliverable 4. Hit the internet and find a means to search for suid programs across your kali system. Do so as a normal user as this is a privilege escalation technique you might use. Make sure to document this. You will need to deal with permissions errors by piping those to /dev/null. Provide a screenshot showing your command and listing similar to that below. Your own sudo program should be in the list.
+
+https://www.hackingarticles.in/linux-privilege-escalation-using-suid-binaries/
+https://steflan-security.com/linux-privilege-escalation-suid-binaries/
+
+
 
 ![img](./imges/5.png)
 
